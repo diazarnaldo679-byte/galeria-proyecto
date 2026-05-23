@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Galería</a>
+    <div>
+      <a class="nav-link d-inline text-white" href="index.html">Inicio</a>
+      <a class="nav-link d-inline text-white" href="galeria.html">Galería</a>
+      <a class="nav-link d-inline text-white" href="contacto.html">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container mt-5">
+
+  <h1 class="mb-4 text-center">Contacto</h1>
+
+  <form id="formularioContacto" class="p-4 shadow rounded bg-white"
+  novalidate>
+
+    <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Correo electrónico</label>
+      <input type="email" id="correo" class="form-control" placeholder="ejemplo@gmail.com" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Tipo de solicitud</label>
+      <select class="form-select">
+        <option>Compra</option>
+        <option>Consulta</option>
+        <option>Venta</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Mensaje</label>
+      <textarea id="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+    </div>
+
+   <button type="submit" id="botonEnviar" class="btn btn-warning w-100">
+Enviar
+</button>
+<p id="mensajeFormulario" class="text-center mt-3"></p>
+
+  </form>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
